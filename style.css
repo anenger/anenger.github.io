@@ -54,6 +54,5 @@ a {
 	padding: 1px 1.5px 0.5px 1px;
 }
 a:hover {
-	background-color: blue;
-	text-decoration: none;
+	text-decoration: underline;
 }
