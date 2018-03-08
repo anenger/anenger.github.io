@@ -2,6 +2,9 @@
 	0% {opacity: 0}
 	100% {opacity: 1}
 }
+img {
+	text-decoration: none;
+}
 body {
     background-color: #696969;
     animation-name: fade-in;
@@ -12,17 +15,6 @@ p {
 	color: white;
 	text-align: center;
 }
-li {
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	margin: 0 0 4px 0;
-}
-div {
-	margin: auto;
-    width: 220px;
-    padding: 10px;
-    border: 5px; 
-}
 #description {
 	margin: auto;
     width: 340px;
@@ -31,7 +23,13 @@ div {
 }
 #links {
 	margin: auto;
-    width: 160px;
+    width: 180px;
+    padding: 10px;
+    border: 5px; 
+}
+div {
+	margin: auto;
+    width: 220px;
     padding: 10px;
     border: 5px; 
 }
@@ -55,8 +53,13 @@ h1 {
 a {
 	color: white;
 	text-decoration: none;
-	padding: 1px 1.5px 0.5px 1px;
 }
-a:hover {
-	text-decoration: underline;
+a:hover{
+	text-decoration: none;
+}
+a:any-link {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  text-decoration: none;
 }
