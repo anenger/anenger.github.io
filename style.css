@@ -15,7 +15,7 @@ p {
 li {
 	font-family: 'Roboto', sans-serif;
 	color: white;
-	margin: 0 0 3px 0;
+	margin: 0 0 4px 0;
 }
 div {
 	margin: auto;
@@ -29,21 +29,25 @@ div {
     padding: 10px;
     border: 5px; 
 }
+#links {
+	margin: auto;
+    width: 160px;
+    padding: 10px;
+    border: 5px; 
+}
 ul {
 	list-style: none;
+	text-align: center;
+	margin: auto;
+	margin-left: -2vw;
 }
 header {
 	background: transparent;
 	margin-top: 20vh;
     height: 20%;
-    position: relative;
-    text-align: center;
-    width: 100%;
     display: block;
 }
 h1 {
-	margin: auto;
-    width: 140px;
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: white;
