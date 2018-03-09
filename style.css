@@ -5,6 +5,16 @@
 img {
 	text-decoration: none;
 }
+img.slide{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    width: auto;
+    border-radius: 4px;
+   	animation-name: fade-in;
+   	animation-duration: 1s;
+}
 body {
     background-color: #696969;
     animation-name: fade-in;
@@ -27,17 +37,42 @@ p {
     padding: 10px;
     border: 5px; 
 }
+#slideshow {
+	margin: auto;
+	width: 75vw;
+	height: 40vh;
+    padding: 10px;
+    border: 5px; 
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+#buttons {
+	margin: auto;
+    padding: 10px;
+    border: 5px; 
+    align-content: center;
+    text-align: center;
+}
+button {
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:white;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	border-radius: 4px;
+}
 div {
 	margin: auto;
     width: 220px;
     padding: 10px;
     border: 5px; 
-}
-ul {
-	list-style: none;
-	text-align: center;
-	margin: auto;
-	margin-left: -2vw;
 }
 header {
 	background: transparent;
@@ -45,7 +80,7 @@ header {
     height: 20%;
     display: block;
 }
-h1 {
+h3 {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: white;

@@ -2,36 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+  	<meta name="description" content="Andrew Enger's Portfolio - Social Media and Code Showcase">
+  	<meta name="keywords" content="Code, Andrew, Enger, Andrew Enger, Portfolio">
+  	<meta name="author" content="Andrew Enger">
+    <meta content="The Official Portfolio of Andrew Enger" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Andrew's Portfolio</title>
-    <meta content="The Official Portfolio of Andrew Enger" name="description" />
-    <meta name="viewport" content="width-device-width, initial-scale=1"/>
-    <link rel="stylesheet" media="all" href="/style.css"/>
-    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" media="all" href="/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 <body>
     <header class="header">
-        <h1 class="logo">Andrew</h1>
+        <h3 class="logo">Andrew Enger</h3>
     </header>
     <div id="links">
                 <a href="https://github.com/anenger/" target="_blank">
-                	<img src="github.png" alt="Github Logo" style="width:40px;height:40px;">
+                	<img src="social-icons/github.png" alt="Github Logo" style="width:40px;height:40px;">
                 </a>
                 <a href="https://www.facebook.com/enger.issues/" target="_blank">
-                	<img src="facebook.png" alt="Facebook Logo" style="width:40px;height:40px;">
+                	<img src="social-icons/facebook.png" alt="Facebook Logo" style="width:40px;height:40px;">
                 </a>
                 <a href="https://www.twitter.com/andrew_enger/" target="_blank">
-                	<img src="twitter.png" alt="Twitter Logo" style="width:40px;height:40px;">
+                	<img src="social-icons/twitter.png" alt="Twitter Logo" style="width:40px;height:40px;">
                 </a>
                 <a href="https://www.linkedin.com/in/andrew-enger-73b096157/" target="_blank">
-                	<img src="linkedin.png" alt="LinkedIn Logo" style="width:40px;height:40px;">
+                	<img src="social-icons/linkedin.png" alt="LinkedIn Logo" style="width:40px;height:40px;">
                 </a>
     </div>
     <div id="description">
-    	<p>Andrew Enger's portfolio. </p>
-    	<p>Northeastern 2022 Computer Science Major</p>
+    	<p>Northeastern 2022 <br/> Computer Science Major</p>
     </div>
+    <div id="slideshow">
+    	<img class="slide" src="slideshow-pics/pciconnect.png" alt="PCI Connect App">
+		<img class="slide" src="slideshow-pics/yeezy.png" alt="Yeezys Under a Tree">
+		<img class="slide" src="slideshow-pics/color.png" alt="Color Picker GUI in Java">
+		<img class="slide" src="slideshow-pics/legitcheck.png" alt="Legit Check on Facebook">
+		<img class="slide" src="slideshow-pics/quiz.png" alt="Quiz GUI in Java">
+	</div>
+	<div id="buttons">
+		<button class="button" onclick="plusDivs(-1)">&#10094; Prev</button>
+		<button class="button" onclick="plusDivs(+1)">Next &#10095;</button>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		    showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		    var i;
+		    var x = document.getElementsByClassName("slide");
+		    if (n > x.length) {slideIndex = 1} 
+		    if (n < 1) {slideIndex = x.length} ;
+		    for (i = 0; i < x.length; i++) {
+		        x[i].style.display = "none"; 
+		    }
+		    x[slideIndex-1].style.display = "block"; 
+		}
+	</script>
 </body>
 
 </html>
