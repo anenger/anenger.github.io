@@ -4,6 +4,7 @@
 }
 img {
 	text-decoration: none;
+	border-radius: 3rem;
 }
 img.slide{
 	display: block;
