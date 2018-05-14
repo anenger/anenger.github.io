@@ -37,6 +37,9 @@ p {
     width: 300px;
     padding: 10px;
     border: 5px; 
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
 }
 #slideshow {
 	margin: auto;
