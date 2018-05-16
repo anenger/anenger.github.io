@@ -17,13 +17,15 @@ img.slide{
    	animation-duration: 1s;
 }
 body {
-    background-color: #696969;
+    background-color: white;
     animation-name: fade-in;
     animation-duration: 2s;
+    font-family: 'Helvetica';
+	color: black;
 }
 p {
-	font-family: 'Roboto', sans-serif;
-	color: white;
+	font-family: 'Helvetica';
+	color: black;
 	text-align: center;
 }
 #description {
@@ -85,12 +87,12 @@ header {
     display: block;
 }
 h3 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Helvetica';
 	text-align: center;
-	color: white;
+	color: black;
 }
 a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 a:hover{
